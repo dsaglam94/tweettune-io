@@ -1,22 +1,37 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header>
-      <Link href="/" className="flex space-x-3">
-        <Image
-          alt="header text"
-          src="/tweettune-icon.png"
-          className="sm:w-12 sm:h-12 w-8 h-8"
-          width={32}
-          height={32}
-        />
-        <h1 className="sm:text-4xl text-2xl font-bold ml-2 tracking-tight">
-          tweetTune
-        </h1>
-      </Link>
+    <header className="max-w-[1100px] mx-auto">
+      <div className="flex items-center justify-between p-8">
+        <Link href="/" className="flex items-center space-x-1">
+          <Image
+            alt="header text"
+            src="/tweettune-icon.png"
+            className="sm:w-12 sm:h-12 w-8 h-8"
+            width={32}
+            height={32}
+          />
+          <h1 className="sm:text-3xl text-2xl font-bold ml-2 tracking-tight">
+            tweetTune
+          </h1>
+        </Link>
+
+        <Link
+          href="https://github.com/dsaglam94/tweettune-io"
+          target="_blank"
+          className="flex items-center space-x-1 border px-6 py-2 rounded-full border-gray-600 text-gray-600 shadow-lg hover:bg-gray-100"
+        >
+          <FaGithub size={25} />
+          <h1 className="sm:text-sm text-xs font-bold ml-2 tracking-tight">
+            Check the project
+          </h1>
+        </Link>
+      </div>
+      <div className="w-full border-b-2" />
     </header>
   );
 };
