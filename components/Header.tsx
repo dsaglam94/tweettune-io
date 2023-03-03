@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 const Header = () => {
   return (
     <header className="max-w-[1100px] mx-auto">
-      <div className="flex items-center justify-between p-8">
+      <div className="sm:flex-row sm:p-8 flex flex-col items-center justify-between gap-5 p-6">
         <Link href="/" className="flex items-center space-x-1">
           <Image
             alt="header text"
@@ -15,7 +15,7 @@ const Header = () => {
             width={32}
             height={32}
           />
-          <h1 className="sm:text-3xl text-2xl font-bold ml-2 tracking-tight">
+          <h1 className="sm:text-4xl text-3xl font-bold ml-2 tracking-tight">
             tweetTune
           </h1>
         </Link>
@@ -23,9 +23,9 @@ const Header = () => {
         <Link
           href="https://github.com/dsaglam94/tweettune-io"
           target="_blank"
-          className="flex items-center space-x-1 border px-6 py-2 rounded-full border-gray-600 text-gray-600 shadow-lg hover:bg-gray-100"
+          className="flex items-center space-x-1 border px-4 py-2 rounded-full border-gray-600 text-gray-600 shadow-lg hover:bg-gray-100"
         >
-          <FaGithub size={25} />
+          <FaGithub size={20} />
           <h1 className="sm:text-sm text-xs font-bold ml-2 tracking-tight">
             Check the project
           </h1>
