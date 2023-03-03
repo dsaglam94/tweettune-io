@@ -1,3 +1,9 @@
+<div align="center">
+
+  https://user-images.githubusercontent.com/98871279/222800622-b401291a-5964-4ea5-8b3d-af97259d9545.mov
+
+</div>
+
 ### Why this project?
 
 I built this project to figure out how to implement new ChatGPT API to my projects and grasp what is possible.
